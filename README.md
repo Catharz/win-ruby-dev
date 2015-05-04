@@ -10,7 +10,8 @@ Win-Ruby-Dev is a VM provisioned using [Vagrant], [Puppet] and [Chocolatey]. The
 ## Preparation
 - Download the VM from [ModernIE] and boot it up
   - I used the IE11/Win7 VM and named it 'IE11 - Win7'
-- Install Windows patches on the VM (recommended)
+- Install Windows patches on the VM
+- Install the latest VirtualBox Guest Additions
 - Package the VM using the Vagrant package command:
   ```
   vagrant package --base "IE11 - Win7" --output ie11_win7.box
