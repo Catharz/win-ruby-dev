@@ -4,28 +4,40 @@ if $::kernel == windows {
 }
 
 # install packages
+package { "avastfreeantivirus" :
+	ensure => "installed"
+}
+
+package { "clover" :
+	ensure => "installed"
+}
+
+package { "consolez" :
+	ensure => "installed"
+}
+
 package { "vim" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 package { "sublimetext2" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 package { "ruby" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 package { "ruby2.devkit" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 package { "rubygems" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 package { "git" :
-    ensure => "latest"
+    ensure => "installed"
 }
 
 # ... other packages here...
