@@ -4,14 +4,6 @@ if $::kernel == windows {
 }
 
 # install packages
-package { "avastfreeantivirus" :
-	ensure => "installed"
-}
-
-package { "clover" :
-	ensure => "installed"
-}
-
 package { "consolez" :
 	ensure => "installed"
 }
