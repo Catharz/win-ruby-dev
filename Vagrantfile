@@ -34,6 +34,7 @@ Vagrant.configure(2) do |config|
 
   config.windows.set_work_network = true
   config.winrm.max_tries = 10
+  config.winrm.host = 'localhost'
 
   # default user-id and password for the modern.ie VMs
   config.winrm.username = 'IEUser'
@@ -42,6 +43,9 @@ Vagrant.configure(2) do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   # config.vm.network "private_network", ip: "192.168.33.10"
+
+  ## Ensure that all networks are set to private
+  config.windows.set_work_network = true
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
